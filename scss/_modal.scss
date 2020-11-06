@@ -8,16 +8,7 @@
   z-index: 999;
   background-color: rgba(0, 0, 0, 0.654);
 }
-.modal_2 {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 999;
-  background-color: rgba(0, 0, 0, 0.654);
-}
+
 .modal-inner {
   position: relative;
   display: flex;
@@ -31,11 +22,19 @@
   position: relative;
   display: block;
   width: calc(100% - 40px);
+  padding: 30px;
   max-width: 480px;
   max-height: 540px;
   margin: 0 auto;
   z-index: 5;
-  background-color: #fff;
+  background-color: rgb(35, 39, 42);
+}
+.modal-input{
+  display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 5px;
 }
 .modal-content {
   position: relative;
@@ -61,23 +60,27 @@
   font-size: 12px;
 }
 .modal-title {
-  padding: 5px 0 15px 0;
+  padding: 15px 0 25px 0;
   text-align: center;
   font-family: "Montserrat-ExtraBold", sans-serif;
   font-size: 21px;
+  color: #fff;
 }
-.modal-input {
+.modal-input__down-wrapp{
   display: flex;
   justify-content: center;
 }
 .input {
   width: 100%;
-
+max-height: 45px;
+min-height: 45px;
   max-width: 200px;
-
+box-sizing: border-box;
+padding-left: 20px;
   background-color: #f2fbfb;
+  background-color: rgba($color: rgb(255, 255, 255), $alpha: 0.102);
   color: black !important;
-  text-align: center;
+  text-align: left;
   font-family: "Montserrat-Regular", sans-serif;
   font-size: 12px;
   line-height: 3;
@@ -245,9 +248,7 @@
   .modal-content {
     padding: 0 20px;
   }
-  .modal-input {
-    flex-wrap: wrap;
-  }
+
   .input {
     margin-bottom: 10px;
     flex-basis: 100%;

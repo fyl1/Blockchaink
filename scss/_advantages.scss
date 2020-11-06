@@ -28,14 +28,14 @@
   &__img {
     width: 200px;
     height: 200px;
-    margin-bottom: 110px;
+    margin-bottom: 80px;
   }
 
   // .advantages-card__text
 
   &__text {
-    max-width: 73%;
-    font-size: 21px;
+    max-width: 80%;
+    font-size: 17px;
     font-family: "Montserrat";
     color: darken($color: rgb(255, 255, 255), $amount: 25%);
     line-height: 1.6;

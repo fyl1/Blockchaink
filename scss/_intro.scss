@@ -45,7 +45,11 @@
     position: absolute;
     left: 0;
     bottom: 0;
+
     margin-bottom: -100px;
+    & img {
+      width: 80%;
+    }
   }
 
   &__list {
@@ -167,6 +171,9 @@
   .intro-bitcoin {
     width: 15%;
     margin-bottom: -10%;
+    & img {
+      width: 100%;
+    }
   }
   .intro__inner {
     padding: 150px 0 150px 0;

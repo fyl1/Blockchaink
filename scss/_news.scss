@@ -28,11 +28,16 @@
   &__list {
   }
   &-bitcoin {
+    display: flex;
+    justify-content: flex-end;
     position: absolute;
     right: 0;
     top: 0;
-    margin-top: -50px;
+    margin-top: -40px;
     z-index: 2;
+    & img {
+      width: 80%;
+    }
   }
 }
 .container {
@@ -41,7 +46,7 @@
   // .news-card__title
 
   &__title {
-    font-size: 18.75px;
+    font-size: 17.75px;
     font-family: "Montserrat";
     color: rgb(255, 255, 255);
     font-weight: bold;
@@ -91,6 +96,9 @@
   .news-bitcoin {
     width: 15%;
     margin-top: -2.5%;
+    & img {
+      width: 100%;
+    }
   }
 }
 @media (max-width: 767px) {

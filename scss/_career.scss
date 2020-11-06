@@ -16,7 +16,7 @@
     width: 50%;
     & p {
       width: 95%;
-      font-size: 21px;
+      font-size: 17px;
       font-family: "Montserrat";
       font-weight: 600;
       color: rgb(2, 19, 21);
@@ -37,10 +37,16 @@
     }
   }
   &-bitcoin {
+    display: flex;
+    justify-content: flex-end;
     position: absolute;
     right: 0;
     bottom: 0;
     margin-bottom: -100px;
+    & img{
+    
+      width: 80%;
+    }
   }
 }
 
@@ -62,5 +68,8 @@
   .career-bitcoin {
     width: 15%;
     margin-bottom: -7.5%;
+    & img{
+      width: 100%;
+    }
   }
 }
