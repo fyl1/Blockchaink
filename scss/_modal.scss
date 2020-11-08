@@ -18,12 +18,65 @@
   height: 100%;
   width: 100%;
 }
+.input-wrapp{
+  position: relative;
+}
+.checkbox-input{
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  
+}
+.checkbox-button:before, .radio-button:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 0.5625rem;
+  background: white;
+  height: 0.5625rem;
+  border: 0.0625rem solid #DADADA;
+  border-radius: 50%;
+}
+.checkbox-button:after {
+  position: absolute;
+  left: 0.875rem;
+  top: 0.3125rem;
+  width: 10px;
+  height: 10px;
+  border-bottom: 0.1875rem solid transparent;
+  border-left: 0.1875rem solid transparent;
+  transform: rotate(-45deg) translate(-50%, -50%);
+}
+.checkbox-button:after, .radio-button:after {
+  content: '';
+  position: absolute;
+}
+ .checkbox-button, .radio-button {
+  font-size: 0.875rem;
+}
+.checkbox-button, .radio-button {
+  padding-left: 10px;
+  padding-bottom: 15px;
+  font-size: 1rem;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+.checkbox input[type="checkbox"], .checkbox input[type="radio"], .radio input[type="checkbox"], .radio input[type="radio"] {
+  position: absolute;
+  left: -624.9375rem;
+}
+.checkbox:hover, .radio:hover {
+  color: #2d2d2d;
+}
 .modal-wrapp {
   position: relative;
   display: block;
   width: calc(100% - 40px);
   padding: 30px;
-  max-width: 480px;
+  max-width: 550px;
   max-height: 540px;
   margin: 0 auto;
   z-index: 5;
@@ -69,6 +122,9 @@
 .modal-input__down-wrapp{
   display: flex;
   justify-content: center;
+  & .input-wrapp:not(:last-child){
+margin-right: 10px;
+  }
 }
 .input {
   width: 100%;
@@ -197,6 +253,7 @@ padding-left: 20px;
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-top: 20px;
 }
 .btn-email {
   width: 135px;
@@ -252,7 +309,7 @@ padding-left: 20px;
   .input {
     margin-bottom: 10px;
     flex-basis: 100%;
-    min-width: 150px;
+    min-width: 100%;
   }
   .modal__item {
     width: 49%;
@@ -262,6 +319,22 @@ padding-left: 20px;
   }
   .modal-bank__title {
     font-size: 12px;
+  }
+  .modal-input{
+    display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(9, 1fr);
+      grid-column-gap: 15px;
+      grid-row-gap: 5px;
+  }
+  .modal-input__down-wrapp{
+    flex-direction: column;
+
+  }
+  .modal-input__down-wrapp .input-wrapp:not(:last-child){
+    margin-right: 0;
+    margin-bottom: 5px;
+    margin-top: 5px;
   }
 }
 @media (max-width: 389px) {
@@ -291,6 +364,7 @@ padding-left: 20px;
   .modal__item {
     width: 50%;
   }
+ 
 }
 @media (max-height: 689px) {
   .modal-wrapp {

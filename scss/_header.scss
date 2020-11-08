@@ -116,13 +116,13 @@
 #menu__toggle:checked ~ .menu__btn > span::before {
   top: 0;
   transform: rotate(0);
-  background-color: #dedddd;
+  background-color: #ce9e2b ;
   border: none;
 }
 #menu__toggle:checked ~ .menu__btn > span::after {
   top: 0;
   transform: rotate(90deg);
-  background-color: #dedddd;
+  background-color:#ce9e2b ;
   border: none;
 }
 #menu__toggle:checked ~ .menu__box {
@@ -141,7 +141,7 @@
   top: 12px;
   width: 40px;
   height: 30px;
-  color: #000000;
+  color: #dedddd;
   cursor: pointer;
   z-index: 100;
   outline: none;
@@ -183,7 +183,7 @@
   height: 5px;
   top: 12px;
   right: 0px;
-  background-color: #000000;
+  background-color:darken($color:#ffffff, $amount: 25%);
   transition-duration: 0.25s;
   outline: none;
 }

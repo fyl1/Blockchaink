@@ -29,6 +29,7 @@ body {
   margin: 0;
   color: #000000;
   overflow-x: hidden;
+  background-color: #000000;
 }
 
 main {
@@ -261,7 +262,7 @@ p {
   top: 0;
   -webkit-transform: rotate(0);
           transform: rotate(0);
-  background-color: #dedddd;
+  background-color: #ce9e2b;
   border: none;
 }
 
@@ -269,7 +270,7 @@ p {
   top: 0;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  background-color: #dedddd;
+  background-color: #ce9e2b;
   border: none;
 }
 
@@ -295,7 +296,7 @@ p {
   top: 12px;
   width: 40px;
   height: 30px;
-  color: #000000;
+  color: #dedddd;
   cursor: pointer;
   z-index: 100;
   outline: none;
@@ -332,7 +333,7 @@ p {
   height: 5px;
   top: 12px;
   right: 0px;
-  background-color: #000000;
+  background-color: #bfbfbf;
   -webkit-transition-duration: 0.25s;
           transition-duration: 0.25s;
   outline: none;
@@ -1576,6 +1577,12 @@ p {
   color: #fff;
 }
 
+@media (max-width: 767px) {
+  .form-in__inner {
+    padding: 20px 15px 10px 15px;
+  }
+}
+
 .modal {
   display: none;
   position: fixed;
@@ -1606,12 +1613,74 @@ p {
   width: 100%;
 }
 
+.input-wrapp {
+  position: relative;
+}
+
+.checkbox-input {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+
+.checkbox-button:before, .radio-button:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 0.5625rem;
+  background: white;
+  height: 0.5625rem;
+  border: 0.0625rem solid #DADADA;
+  border-radius: 50%;
+}
+
+.checkbox-button:after {
+  position: absolute;
+  left: 0.875rem;
+  top: 0.3125rem;
+  width: 10px;
+  height: 10px;
+  border-bottom: 0.1875rem solid transparent;
+  border-left: 0.1875rem solid transparent;
+  -webkit-transform: rotate(-45deg) translate(-50%, -50%);
+          transform: rotate(-45deg) translate(-50%, -50%);
+}
+
+.checkbox-button:after, .radio-button:after {
+  content: '';
+  position: absolute;
+}
+
+.checkbox-button, .radio-button {
+  font-size: 0.875rem;
+}
+
+.checkbox-button, .radio-button {
+  padding-left: 10px;
+  padding-bottom: 15px;
+  font-size: 1rem;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.checkbox input[type="checkbox"], .checkbox input[type="radio"], .radio input[type="checkbox"], .radio input[type="radio"] {
+  position: absolute;
+  left: -624.9375rem;
+}
+
+.checkbox:hover, .radio:hover {
+  color: #2d2d2d;
+}
+
 .modal-wrapp {
   position: relative;
   display: block;
   width: calc(100% - 40px);
   padding: 30px;
-  max-width: 480px;
+  max-width: 550px;
   max-height: 540px;
   margin: 0 auto;
   z-index: 5;
@@ -1670,6 +1739,10 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.modal-input__down-wrapp .input-wrapp:not(:last-child) {
+  margin-right: 10px;
 }
 
 .input {
@@ -1796,6 +1869,7 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 20px;
 }
 
 .btn-email {
@@ -1866,7 +1940,7 @@ p {
     margin-bottom: 10px;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-    min-width: 150px;
+    min-width: 100%;
   }
   .modal__item {
     width: 49%;
@@ -1876,6 +1950,27 @@ p {
   }
   .modal-bank__title {
     font-size: 12px;
+  }
+  .modal-input {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: (1fr)[9];
+        grid-template-rows: repeat(9, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 5px;
+  }
+  .modal-input__down-wrapp {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .modal-input__down-wrapp .input-wrapp:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 5px;
+    margin-top: 5px;
   }
 }
 
@@ -2130,4 +2225,343 @@ p {
   line-height: 1.421;
   text-align: center;
   text-transform: inherit;
+}
+
+.page .header__inner {
+  padding: 0 35px 0 0px;
+}
+
+.page .hamburger-menu {
+  display: none;
+}
+
+.header__right {
+  width: 81%;
+  height: 92px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 19%;
+  max-width: 300px;
+  height: 92px;
+  min-width: 230px;
+}
+
+.referral__text {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: white;
+  line-height: 1.2;
+  text-align: right;
+}
+
+.referral__title {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #8999a9;
+  line-height: 1.2;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.ava__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ava__img {
+  background-color: #19232c;
+  width: 40px;
+  height: 40px;
+}
+
+.ava__img img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.ava__text {
+  font-size: 12px;
+  font-family: "Montserrat";
+  color: white;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: right;
+  margin-left: 20px;
+}
+
+.main__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.main__left {
+  width: 19%;
+  max-width: 300px;
+  height: 100%;
+  min-width: 230px;
+  min-height: 100vh;
+  background-color: #17161c;
+  margin-top: -1px;
+}
+
+.main__content {
+  padding: 50px 0 50px 45px;
+  background-image: url("../img/bac-proj.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: -1px;
+}
+
+.main__title {
+  font-size: 32px;
+  font-family: "Montserrat";
+  color: white;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.menu-inner {
+  background-color: transparent;
+}
+
+.menu-inner__box {
+  background-color: transparent;
+  padding: 0;
+}
+
+.menu-inner__li {
+  background-color: transparent;
+  padding: 35px 0 0 20%;
+}
+
+.menu-inner__item {
+  font-size: 12px;
+  font-family: "Montserrat";
+  color: #bfbfbf;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  background-color: transparent;
+}
+
+.menu-inner__item:hover {
+  color: #dcae51;
+}
+
+.investment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  max-width: 760px;
+  padding-bottom: 50px;
+}
+
+.investment__title {
+  font-size: 12px;
+  font-family: "Montserrat";
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.investment-portfolio__subtitle {
+  font-size: 10.705px;
+  font-family: "Montserrat";
+  color: #8999a9;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.investment-portfolio__text {
+  font-size: 42px;
+  font-family: "Montserrat";
+  color: #e8b754;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.sum {
+  margin-bottom: 45px;
+}
+
+.sum-day__text {
+  color: white;
+}
+
+.investment-statistics {
+  width: 50%;
+}
+
+.investment-statistics__list {
+  width: 100%;
+  border-radius: 4px;
+  background-color: #1b1a21;
+}
+
+.investment-statistics__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 30px 20px 15px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.investment-statistics__item:not(:last-child) {
+  border-bottom: 1px solid rgba(166, 166, 166, 0.5);
+}
+
+.investment-statistics__title {
+  font-size: 10.705px;
+  font-family: "Montserrat";
+  color: #8999a9;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.investment-statistics__text {
+  font-size: 14.662px;
+  font-family: "Montserrat";
+  color: white;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: right;
+}
+
+.company-news__title {
+  font-size: 13px;
+  font-family: "Montserrat";
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.company-news__inner {
+  padding-top: 50px;
+  border-top: 2px solid rgba(103, 99, 129, 0.4);
+}
+
+.company-news-list {
+  padding-top: 23px;
+  max-width: 80%;
+}
+
+.company-news-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+.company-news-card .card-img {
+  width: 33%;
+}
+
+.company-news-card .card-img img {
+  border-radius: 4px;
+}
+
+.company-news-card .card-text {
+  width: 66%;
+  padding-left: 30px;
+}
+
+.company-news-card .card-text__title {
+  font-size: 12px;
+  font-family: "Montserrat";
+  color: #d9d9d9;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.company-news-card .card-text__text {
+  font-size: 10px;
+  font-family: "Montserrat";
+  color: #bfbfbf;
+  font-weight: normal;
+  line-height: 1.2;
+  text-align: left;
+}
+
+@media (max-width: 1199px) {
+  .investment {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .investment-statistics {
+    width: calc(100% - 40px);
+  }
+  .company-news-card {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .company-news-card .card-img {
+    width: 100%;
+  }
+  .company-news-card .card-text {
+    width: 100%;
+    padding-left: 0%;
+  }
+}
+
+@media (max-width: 767px) {
+  .header__logo {
+    display: none;
+  }
+  .header__right {
+    width: 100%;
+  }
+  .main__left {
+    display: none;
+  }
 }

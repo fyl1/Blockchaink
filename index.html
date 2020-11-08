@@ -1,528 +1,467 @@
 <!DOCTYPE html>
 <html class="" lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <title>Blockchaink</title>
-    <meta name="description" content="" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+  <meta charset="utf-8" />
+  <title>Blockchaink</title>
+  <meta name="description" content="" />
 
-    <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="shortcut icon" href="img/favicon.ico" />
+  <meta name="format-detection" content="telephone=no" />
 
-    <link href="css/style.css" rel="stylesheet" media="screen" />
-    <!-- <link href="scss/swiper.min.css" rel="stylesheet" media="screen" /> -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <!-- <style>
-      div.old-browser {
-        height: 100vh;
-        position: relative;
-      }
-      div.old-browser p {
-        margin: 0;
-        font-size: 20px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
-      }
-    </style>
-    <script>
-      var ua = window.navigator.userAgent;
+  <link rel="shortcut icon" href="img/favicon.ico" />
 
-      if (
-        ua.search("MSIE") > 0 ||
-        ua.search("Edge") > 0 ||
-        ua.search("Trident/") > 0
-      )
-        oldBrowser();
+  <link href="css/style.css" rel="stylesheet" media="screen" />
+  <!-- <link href="scss/swiper.min.css" rel="stylesheet" media="screen" /> -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
-      function oldBrowser() {
-        var fragment =
-          "<div class='old-browser'> \
-          <p>Вы используете устаревший браузер!<br>Пожалуйста, зайдите к нам, например с помощью:<br><br> \
-          <a href='https://www.google.com/chrome/'>Google Chrome</a><br><br> \
-          <a href='https://browser.yandex.ru/'>Яндекс Браузер</a><br><br> \
-          <a href='https://www.opera.com/'>Opera</a><br><br> \
-          <a href='https://www.mozilla.org/'>Firefox</a><br><br> \
-          Safari.</p> \
-          </div>";
+</head>
 
-        document.addEventListener("DOMContentLoaded", function () {
-          document.body.innerHTML = fragment;
-        });
-      }
-    </script> -->
-   
-   
-  </head>
+<body class="body">
 
-  <body class="body">
-    
-    <div class="page__inner">
-      
-    
-      <div class="page__content">
-        <div class="page__content-wrapp ">
-         
+  <div class="page__inner">
+
+    <div class="page__content">
+      <div class="page__content-wrapp ">
+
         <header class="header" role="banner">
 
           <div class="container">
             <div class="header__inner">
-               
+
               <div class="logo">
                 <div class="logo-inner">
                   <div class="logo-img">
                     <div class="logo-img__blockchain"><img src="img/logo1-01 (1).svg" alt=""></div>
-                  
+
                   </div>
-                 
+
                 </div>
               </div>
-              
+
               <nav id="main-nav" class="main-nav" role="navigation">
                 <ul class="mein-menu__box" id="mein-menu">
                   <li class="mein-menu__li"><a class="mein-menu__item" href="#">ГЛАВНАЯ</a></li>
-                  <li class="mein-menu__li"><a class="mein-menu__item" href="#course">Клуб BBC </a></li>
-                  <li class="mein-menu__li"><a class="mein-menu__item" href="#training">Карьра </a></li>
-                  <li class="mein-menu__li"><a class="mein-menu__item" href="#question"> Легитимность</a></li>
-                  <li class="mein-menu__li"><a class="mein-menu__item" href="#question">Новости</a></li>
-              
+                  <li class="mein-menu__li"><a class="mein-menu__item" href="#intro">Клуб BBC </a></li>
+                  <li class="mein-menu__li"><a class="mein-menu__item" href="#career">Карьра </a></li>
+                  <li class="mein-menu__li"><a class="mein-menu__item" href="#advantages"> Легитимность</a></li>
+                  <li class="mein-menu__li"><a class="mein-menu__item" href="#news">Новости</a></li>
+
                 </ul>
                 <div class="hamburger-menu">
                   <input id="menu__toggle" type="checkbox" />
                   <label class="menu__btn" for="menu__toggle">
                     <span></span>
                   </label>
-              
+
                   <ul class="menu__box" id="menu">
                     <li class="menu__li"><a class="menu__item" href="#">ГЛАВНАЯ</a></li>
-                    <li class="menu__li"><a class="menu__item" href="#course">Клуб BBC </a></li>
-                    <li class="menu__li"><a class="menu__item" href="#training">Карьра </a></li>
-                    <li class="menu__li"><a class="menu__item" href="#question"> Легитимность</a></li>
-                    <li class="menu__li"><a class="menu__item" href="#question">Новости</a></li>
+                    <li class="menu__li"><a class="menu__item" href="#intro">Клуб BBC </a></li>
+                    <li class="menu__li"><a class="menu__item" href="#career">Карьра </a></li>
+                    <li class="menu__li"><a class="menu__item" href="#advantages"> Легитимность</a></li>
+                    <li class="menu__li"><a class="menu__item" href="#news">Новости</a></li>
                     <div class="header-menu-btn">
                       <div class="header-register-btn">
-                        <button  class="btn register-btn btn-scroll btn-main">
+                        <button class="btn register-btn btn-scroll btn-modal btn-main">
                           <div class="btn__body-wrapp">
-                          <div class="btn__body">
-                            <span class="btn__text">Регистрация</span>
+                            <div class="btn__body">
+                              <span class="btn__text">Регистрация</span>
                             </div>
                             <span class="btn__icon">
                           
           
-                              </span>
-                              <span></span>
+                         
+                            <span></span>
                             </span>
                           </div>
-                    
+
                         </button>
                       </div>
                       <div class="header-to-come">
-                        <button  class="btn to-come btn-scroll btn-main">
+                        <button class="btn to-come btn-scroll btn-main">
                           <div class="btn__body-wrapp">
-                          <div class="btn__body">
-                            <span class="btn__text">войти</span>
+                            <div class="btn__body">
+                              <span class="btn__text">войти</span>
                             </div>
                             <span class="btn__icon">
                           
           
-                              </span>
-                              <span></span>
+                          
+                            <span></span>
                             </span>
                           </div>
-                    
+
                         </button>
-                      
+
                       </div>
                     </div>
                   </ul>
                 </div>
               </nav>
-             
+
               <div class="header-btn">
                 <div class="header-register-btn">
-                  <button  class="btn register-btn btn-scroll btn-main">
+                  <button class="btn register-btn btn-scroll btn-modal btn-main">
                     <div class="btn__body-wrapp">
-                    <div class="btn__body">
-                      <span class="btn__text">Регистрация</span>
+                      <div class="btn__body">
+                        <span class="btn__text">Регистрация</span>
                       </div>
                       <span class="btn__icon">
                     
     
-                        </span>
-                        <span></span>
+                    
+                      <span></span>
                       </span>
                     </div>
-              
+
                   </button>
                 </div>
                 <div class="header-to-come">
-                  <button  class="btn to-come btn-scroll btn-main">
+                  <button class="btn to-come btn-scroll btn-main">
                     <div class="btn__body-wrapp">
-                    <div class="btn__body">
-                      <span class="btn__text">войти</span>
+                      <div class="btn__body">
+                        <span class="btn__text">войти</span>
                       </div>
                       <span class="btn__icon">
                     
     
-                        </span>
-                        <span></span>
+                      
+                      <span></span>
                       </span>
                     </div>
-                    
-                    
+
                   </button>
                   <div class="form-in_2">
                     <div class="form-in_2__inner">
-                  <form method="post" action="" class="form-in__content">
-                    <div class="form-in-input">
-                      <input
-                              type="text"
-                              class="input login_input"
-                              id="#"
-                              name="login_input"
-                              placeholder="Логин"
-                      /> 
-                      <input
-                              type="text"
-                              class="input password__input"
-                              id=""
-                              name=" password__input"
-                              placeholder="Пароль"
-                      />
-                      </div
-                  </form>
-                  <div class="form-in-btn">
-                    <button  class="btn btn-form-in btn-scroll btn-main">
-                      <div class="btn__body-wrapp">
-                      <div class="btn__body">
-                        <span class="btn__text">Войти</span>
-                        </div>
-                        <span class="btn__icon">
-                      
-                  
-                          </span>
-                          <span></span>
+                      <form method="post" action="" class="form-in__content">
+                        <span class="form-in-input">
+                          <input type="text" class="input login_input" id="#" name="login_input" placeholder="Логин" />
+                          <input type="text" class="input password__input" id="" name=" password__input" placeholder="Пароль" />
                         </span>
-                      </div>
-                  
-                    </button>
-                  </div>
-                  <div class="form-in__text">Забыли пароль?</div>
-                  </div>
-                  
-                  </div>
-                </div>
-              </div>
-                                 
-                                 
-                                
-                    
-            </div>
-          </div>
-        </header>
-     
-      </div>
-     
-    </div>
-      </div>
-        <main class="main" role="main" style="overflow: hidden;">
-        
-
-          <section class="intro" id="intro">
-            <div class="container">
-              <div class="intro__inner">
-                <div class="intro-wrapp">
-                <h1 class="intro__title">
-                  Закрытый Blockchain клуб инвесторов
-                  
-                </h1>
-                <div class="intro__subtitle">
-                  <p>Мы Первый закрытый клуб blockchain клуб в странах СНГ, предоставляющий услугу венчурного фонда.</p>
-                  <p>Стабильный ежедневный доход, быстрый вывод средств, ежемесячная отчетность торговый операций, техническая поддержка 24/7.Мы всегда с вами!
-                </p>
-                </div>
-               <div class="intro-button">
-           
-                <a  class="btn btn-intro btn-scroll   btn-main" href="#prise">
-                  <div class="btn__body-wrapp">
-                  <div class="btn__body">
-                    <span class="btn__text">Регистрация</span>
+                        <div class="form-in-btn">
+                          <button class="btn btn-form-in btn-scroll btn-main">
+                            <div class="btn__body-wrapp">
+                              <div class="btn__body">
+                                <span class="btn__text">Войти</span>
                     </div>
                     <span class="btn__icon">
                       
                   
-  
-                      </span>
-                      <span></span>
+                        
+                              <span></span>
                     </span>
                   </div>
-            
-                </a>
-               </div>
-            
+
+                  </button>
+                </div>
+                </form>
+
+                <div class="form-in__text">Забыли пароль?</div>
+
+              </div>
+
             </div>
           </div>
-              
-               
-           
-    </div>  
-<div class="intro-bitcoin">
-  <img src="img/intro-bitcoin.png" alt="intro-bitcoin">
-</div>
-          </section>
-       <section class="club">
-        <div class="container">
-          <div class="club__inner">
-            <div class="club-img">
-              
-              <div class="club-img__img">
-                <div class="club-img__uptext">КЛУБ</div>
-                <div class="logo">
-                  <div class="logo-inner">
-                    <div class="logo-img">
-                      <div class="logo-img__blockchain"><img src="img/logo1-01 (1).svg" alt=""></div>
-      
-                    
-                    </div>
-                   
+      </div>
+
+    </div>
+  </div>
+  </header>
+
+  </div>
+
+  </div>
+  </div>
+  <main class="main" role="main" style="overflow: hidden;">
+
+    <section class="intro" id="intro">
+      <div class="container">
+        <div class="intro__inner">
+          <div class="intro-wrapp">
+            <h1 class="intro__title">
+                  Закрытый Blockchain клуб инвесторов
+                  
+                </h1>
+            <div class="intro__subtitle">
+              <p>Мы Первый закрытый клуб blockchain клуб в странах СНГ, предоставляющий услугу венчурного фонда.</p>
+              <p>Стабильный ежедневный доход, быстрый вывод средств, ежемесячная отчетность торговый операций, техническая поддержка 24/7.Мы всегда с вами!
+              </p>
+            </div>
+            <div class="intro-button">
+
+              <a class="btn btn-intro btn-scroll  btn-modal btn-main" href="#prise">
+                <div class="btn__body-wrapp">
+                  <div class="btn__body">
+                    <span class="btn__text">Регистрация</span>
                   </div>
+                  <span class="btn__icon">
+                      
+                  
+  
+                     
+                  <span></span>
+                  </span>
+                </div>
+
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="intro-bitcoin">
+        <img src="img/intro-bitcoin.png" alt="intro-bitcoin">
+      </div>
+    </section>
+    <section class="club">
+      <div class="container">
+        <div class="club__inner">
+          <div class="club-img">
+
+            <div class="club-img__img">
+              <div class="club-img__uptext">КЛУБ</div>
+              <div class="logo">
+                <div class="logo-inner">
+                  <div class="logo-img">
+                    <div class="logo-img__blockchain"><img src="img/logo1-01 (1).svg" alt=""></div>
+
+                  </div>
+
                 </div>
               </div>
             </div>
-            <div class="club-text">
-              <div class="club-text__inner">
-                <p>Наша команда аналитиков сформировалась во 2 квартале 2016 года и на данный момент состоит из 15 сотрудников включая остальных членов нашей команды: Программисты FS, Web-дизайнеры, маркетологи,  и др. </p>
-                <p>Начиная с <span class="text-bold">3 квартала 2016 года - 4 квартал 2018 года</span> наша команда оттачивала свой опыт торгуя на известных крипто-биржах: Bitfinex, Livecoin, Poloniex. </p>
-                
-                <p>Мы досконально изучили правила технического анализа криптовалютного рынка, применяя ранее известные нам знания приобретённые на рынке <span class="text-bold">Forex.</span></p>
-             <p>Однако мы с головой ушли в крыпторынок, так как он имеет большую валатильность, а вместе с этим и высокую прибыль. На данный момент мы располагаем нужными знаниями для того чтобы предугадывать движение крипторынка и можем их применять извлекая прибыль для себя и своих клиентов.</p>
+          </div>
+          <div class="club-text">
+            <div class="club-text__inner">
+              <p>Наша команда аналитиков сформировалась во 2 квартале 2016 года и на данный момент состоит из 15 сотрудников включая остальных членов нашей команды: Программисты FS, Web-дизайнеры, маркетологи, и др. </p>
+              <p>Начиная с <span class="text-bold">3 квартала 2016 года - 4 квартал 2018 года</span> наша команда оттачивала свой опыт торгуя на известных крипто-биржах: Bitfinex, Livecoin, Poloniex. </p>
+
+              <p>Мы досконально изучили правила технического анализа криптовалютного рынка, применяя ранее известные нам знания приобретённые на рынке <span class="text-bold">Forex.</span></p>
+              <p>Однако мы с головой ушли в крыпторынок, так как он имеет большую валатильность, а вместе с этим и высокую прибыль. На данный момент мы располагаем нужными знаниями для того чтобы предугадывать движение крипторынка и можем их применять извлекая прибыль для себя и своих клиентов.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section class="career" id="career">
+      <div class="container">
+        <div class="career__inner">
+          <div class="career__text">
+            <p>Проведя командный анализ нашей средней доходности за крайние 4 квартала, мы вывели среднюю доходность и отталкиваясь от нее продумали Инвестиционный планы с доходностью от 21% до 27% ежемесячной прибыли.</p>
+
+          </div>
+          <div class="career__img">
+            <img src="img/Карьера.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="career-bitcoin">
+        <img src="img/career-bitcoin.png" alt="intro-bitcoin">
+      </div>
+    </section>
+    <section class="advantages" id="advantages">
+      <div class="container">
+        <div class="advantages__inner">
+          <div class="advantages__list">
+            <div class="advantages-card">
+              <div class="advantages-card__img"><img src="img/wallet.png" alt=""></div>
+              <div class="advantages-card__text">
+                <p>Начисление ежедневное, а вывод полученной прибыли осуществляется в любой день и занимает до 72 рабочих часов.
+                </p>
+              </div>
+            </div>
+            <div class="advantages-card">
+              <div class="advantages-card__img">
+                <img src="img/cash-back.png" alt="">
+              </div>
+              <div class="advantages-card__text">
+                <p>Так же в первые годы планомерного развития BBS, мы внедрили систему поощрений. За приглашения по ссылке в наш клуб, вы будуте получать 8% от суммы инвестиции ваших партнёров.
+                </p>
+              </div>
+            </div>
+            <div class="advantages-card">
+              <div class="advantages-card__img">
+                <img src="img/team.png" alt="">
+              </div>
+              <div class="advantages-card__text">
+                <p>Реферальная система поощрений является многоуровневой и вы можете извлекать доход со всей вашей структуры.
+                </p>
               </div>
             </div>
           </div>
         </div>
-     
-       </section>
-       <section class="career">
-        <div class="container">
-          <div class="career__inner">
-            <div class="career__text">
-              <p>Проведя командный анализ нашей средней доходности за крайние 4 квартала, мы вывели среднюю доходность и отталкиваясь от нее продумали Инвестиционный планы с доходностью от 21% до 27% ежемесячной прибыли.</p>
+      </div>
+    </section>
+    <section class="safety" id="safety">
+      <div class="container">
+        <div class="safety__inner">
+          <div class="safety__uptext">Почему Blockchain Business System </div>
+          <div class="safety__title">
+            <img src="img/это безопасно__.png" alt="">
+          </div>
+          <div class="safety__list">
+            <div class="safety__list-left">
+              <div class="safety-item">
+                <div class="safety-item__img">
+                  <img src="img/icon_1.png" alt="">
+                </div>
+                <div class="safety-item__text">Каждый квартал мы предоставляем всю финансовую отчётность наших криптовалютных торгов и показываем извлеченную прибыль наших инвесторов</div>
 
+              </div>
+              <div class="safety-item">
+                <div class="safety-item__img">
+                  <img src="img/icon_2.png" alt="">
+                </div>
+                <div class="safety-item__text">Наша платформа официально зарегистрирована как международная компания на территории Великобритании</div>
+
+              </div>
+              <div class="safety-item">
+                <div class="safety-item__img">
+                  <img src="img/icon_3.png" alt="">
+                </div>
+                <div class="safety-item__text">Мы гарантируем прибыль так как вели отчёт ежемесячной извлекаемой прибыли на протяжении последних 3х лет. Мы выплачиваем лишь минимальную ставку для поддержания стабильности и избежания непридвидимых обстоятельств.</div>
+
+              </div>
             </div>
-            <div class="career__img">
-              <img src="img/Карьера.png" alt="">
+            <div class="safety__list-right">
+              <div class="safety-item">
+                <div class="safety-item__img">
+                  <img src="img/icon_4.png" alt="">
+                </div>
+                <div class="safety-item__text">Часть извлеченной прибыли мы инвестируем в POOL STEAKING BINANCE для создания страхового фонда во избежания обстоятельств обвала рынка или других непредвидимых обстаятельств. Данные средства постоянно накапливаются и приносят прибыль.</div>
+
+              </div>
+              <div class="safety-item">
+                <div class="safety-item__img">
+                  <img src="img/icon_5.png" alt="">
+                </div>
+                <div class="safety-item__text">Совместно с командой, на протяжении года мы досконально занимались разработкой маркетинга и на данный момент готовы к самым разным ситуациям на рынке, а ваша прибыль однозначно будет стабильной!</div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="career-bitcoin">
-          <img src="img/career-bitcoin.png" alt="intro-bitcoin">
+        <div class="safety-bitcoin">
+          <img src="img/safety-bitcoin.png" alt="intro-bitcoin">
         </div>
-      </section>
-        <section class="advantages">
-          <div class="container">
-            <div class="advantages__inner">
-              <div class="advantages__list">
-                <div class="advantages-card">
-                  <div class="advantages-card__img"><img src="img/wallet.png" alt=""></div>
-                  <div class="advantages-card__text">
-                    <p>Начисление ежедневное, а вывод полученной прибыли осуществляется в любой день и занимает до 72 рабочих часов.
-                    </p>
-                  </div>
-                </div>
-                <div class="advantages-card">
-                  <div class="advantages-card__img">
-                    <img src="img/cash-back.png" alt="">
-                  </div>
-                  <div class="advantages-card__text">
-                    <p>Так же в первые годы планомерного развития BBS, мы внедрили систему поощрений. За приглашения по ссылке в наш клуб, вы будуте получать 8% от суммы инвестиции ваших партнёров. 
-                    </p>
-                  </div>
-                </div>
-                <div class="advantages-card">
-                  <div class="advantages-card__img">
-                    <img src="img/team.png" alt="">
-                  </div>
-                  <div class="advantages-card__text">
-                    <p>Реферальная система поощрений является многоуровневой и вы можете извлекать доход со всей вашей структуры.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="safety">
-          <div class="container">
-            <div class="safety__inner">
-              <div class="safety__uptext">Почему Blockchain Business System </div>
-              <div class="safety__title">
-                <img src="img/это безопасно__.png" alt="">
-              </div>
-<div class="safety__list">
-  <div class="safety__list-left">
-  <div class="safety-item">
-    <div class="safety-item__img">
-      <img src="img/icon_1.png" alt="">
-    </div>
-    <div class="safety-item__text">Каждый квартал мы предоставляем всю финансовую отчётность наших криптовалютных торгов и показываем извлеченную прибыль наших инвесторов</div>
-
-  </div>
-  <div class="safety-item">
-    <div class="safety-item__img">
-      <img src="img/icon_2.png" alt="">
-    </div>
-    <div class="safety-item__text">Наша платформа официально зарегистрирована как международная компания на территории Великобритании</div>
-
-  </div>
-  <div class="safety-item">
-    <div class="safety-item__img">
-      <img src="img/icon_3.png" alt="">
-    </div>
-    <div class="safety-item__text">Мы гарантируем прибыль так как вели отчёт ежемесячной извлекаемой прибыли на протяжении последних 3х лет. Мы выплачиваем лишь минимальную ставку для поддержания стабильности и избежания непридвидимых обстоятельств.</div>
-
-  </div>
-</div>
-<div class="safety__list-right">
-  <div class="safety-item">
-    <div class="safety-item__img">
-      <img src="img/icon_4.png" alt="">
-    </div>
-    <div class="safety-item__text">Часть извлеченной прибыли мы инвестируем в POOL STEAKING BINANCE для создания страхового фонда во избежания обстоятельств обвала рынка или других непредвидимых обстаятельств. Данные средства постоянно накапливаются и приносят прибыль.</div>
-
-  </div>
-  <div class="safety-item">
-    <div class="safety-item__img">
-      <img src="img/icon_5.png" alt="">
-    </div>
-    <div class="safety-item__text">Совместно с командой, на протяжении года мы досконально занимались разработкой маркетинга и на данный момент готовы к самым разным ситуациям на рынке, а ваша прибыль однозначно будет стабильной!</div>
-  </div>
-  </div>
-</div>
-              </div>
-            </div>
-          </div>
-          <div class="safety-bitcoin">
-            <img src="img/safety-bitcoin.png" alt="intro-bitcoin">
-          </div>
-        </section>
-        <section class="news">
-          <div class="container">
-            <div class="news__inner">
-              <div class="news__title">Поледние новости BBS </div>
-                <div class="news__list swiper-container">
-                  <div class="swiper-wrapper">
-                    <div class="news-card swiper-slide">
-                      <div class="news-card__inner">
-                      <h2 class="news-card__title"> Официальный запкуск компании    </h2>
-                      <div class="news-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
-                      <div class="news-card-btn">
-                        <button  class="btn news-card btn-scroll btn-main">
-                        <div class="btn__body-wrapp">
+      </div>
+    </section>
+    <section class="news" id="news">
+      <div class="container">
+        <div class="news__inner">
+          <div class="news__title">Поледние новости BBS </div>
+          <div class="news__list swiper-container">
+            <div class="swiper-wrapper">
+              <div class="news-card swiper-slide">
+                <div class="news-card__inner">
+                  <h2 class="news-card__title"> Официальный запкуск компании    </h2>
+                  <div class="news-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
+                  <div class="news-card-btn">
+                    <button class="btn news-card btn-scroll btn-main">
+                      <div class="btn__body-wrapp">
                         <div class="btn__body">
                           <span class="btn__text">Читать полностью   </span>
-                          </div>
-                          <span class="btn__icon">
+                        </div>
+                        <span class="btn__icon">
                         
         
-                            </span>
-                            <span></span>
-                          </span>
-                        </div>
-                  
-                      </button></div>
-                    </div>
+                           
+                        <span></span>
+                        </span>
+                      </div>
+
+                    </button>
                   </div>
-                  <div class="news-card swiper-slide">
-                    <div class="news-card__inner">
-                    <h2 class="news-card__title"> Официальный запкуск компании    </h2>
-                    <div class="news-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
-                    <div class="news-card-btn">
-                      <button  class="btn news-card btn-scroll btn-main">
+                </div>
+              </div>
+              <div class="news-card swiper-slide">
+                <div class="news-card__inner">
+                  <h2 class="news-card__title"> Официальный запкуск компании    </h2>
+                  <div class="news-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
+                  <div class="news-card-btn">
+                    <button class="btn news-card btn-scroll btn-main">
                       <div class="btn__body-wrapp">
-                      <div class="btn__body">
-                        <span class="btn__text">Читать полностью   </span>
+                        <div class="btn__body">
+                          <span class="btn__text">Читать полностью   </span>
                         </div>
                         <span class="btn__icon">
                       
       
-                          </span>
-                          <span></span>
+                          
+                        <span></span>
                         </span>
                       </div>
-                
-                    </button></div>
+
+                    </button>
                   </div>
                 </div>
-                <div class="news-card swiper-slide">
-                  <div class="news-card__inner">
+              </div>
+              <div class="news-card swiper-slide">
+                <div class="news-card__inner">
                   <h2 class="news-card__title"> Официальный запкуск компании    </h2>
                   <div class="news-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
                   <div class="news-card-btn">
-                    <button  class="btn btn-news-card btn-scroll btn-main">
-                    <div class="btn__body-wrapp">
-                    <div class="btn__body">
-                      <span class="btn__text">Читать полностью   </span>
-                      </div>
-                      <span class="btn__icon">
+                    <button class="btn btn-news-card btn-scroll btn-main">
+                      <div class="btn__body-wrapp">
+                        <div class="btn__body">
+                          <span class="btn__text">Читать полностью   </span>
+                        </div>
+                        <span class="btn__icon">
                     
     
-                        </span>
+                        
                         <span></span>
-                      </span>
-                    </div>
-              
-                  </button></div>
+                        </span>
+                      </div>
+
+                    </button>
+                  </div>
                 </div>
               </div>
-                
-              </div>
-              <div class="swiper-button-next">
-                <img src="img/fast-forward.png" alt="">
-              </div>
-              <div class="swiper-button-prev">
-                <img src="img/fast-forward копия.png" alt="">
-              </div>
+
+            </div>
+            <div class="swiper-button-next">
+              <img src="img/fast-forward.png" alt="">
+            </div>
+            <div class="swiper-button-prev">
+              <img src="img/fast-forward копия.png" alt="">
             </div>
           </div>
-          <div class="news-bitcoin">
-            <img src="img/new-bitcoin.png" alt="intro-bitcoin">
-          </div>
-        </section>
-             
-   
-                 
-                  
-        </main>
+        </div>
+        <div class="news-bitcoin">
+          <img src="img/new-bitcoin.png" alt="intro-bitcoin">
+        </div>
       </div>
-<footer class="footer">
-  <div class="container">
-   <div class="footer-inner">
-     <div class="footer-menu">
-       
-     
-         <div class="footer-menu__list" id="footer-menu">
-           <a href="#" class="footer-menu__link">Главная</a>
-           <a href="#course" class="footer-menu__link">О кошельке</a>
-           <a href="#training" class="footer-menu__link">Бизнес с нами</a>
-           <a href="#question" class="footer-menu__link">Вопрос-ответ</a>
-         </div>
+    </section>
 
-       <div class="support-cop">
-        <div class="support-cop__title">Политика конфиденциальности</div>
-        Copyright 2020 Blochchain Business System. Все права защищены. 
-      </div>
-     </div>
-     <div class="footer-support">
-       <div class="support">
-        <div class="support__email">
-          Тех. поддержка <br>
-          <a href="eml:ffff" class="footer-email"
-          >support@bbs.com </a
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-menu">
+
+          <div class="footer-menu__list" id="footer-menu">
+            <a href="#" class="footer-menu__link">Главная</a>
+            <a href="#course" class="footer-menu__link">О кошельке</a>
+            <a href="#safety" class="footer-menu__link">Бизнес с нами</a>
+            <a href="#question" class="footer-menu__link">Вопрос-ответ</a>
+          </div>
+
+          <div class="support-cop">
+            <div class="support-cop__title">Политика конфиденциальности</div>
+            Copyright 2020 Blochchain Business System. Все права защищены.
+          </div>
+        </div>
+        <div class="footer-support">
+          <div class="support">
+            <div class="support__email">
+              Тех. поддержка
+              <br>
+              <a href="eml:ffff" class="footer-email">support@bbs.com </a
         >
         </div>
         
@@ -540,206 +479,144 @@
   </div>
 </footer>
 <article class="modal" id="modal">
-         
-   <div class="modal-inner">
+
+  <div class="modal-inner">
     <div class="modal-wrapp">
       <form method="post" action="form/form_popup.php" class="modal-content">
 
-     
-      <div class="modal-title">Регистрация</div>
-<div class="modal-input__wrapp">
-    <div class="modal-input">
-      <div class="input-wrapp">
-      <input
-              type="text"
-              class="input surname_input"
-              id="surname_popup"
-              name="surname_popup"
-              placeholder="Иванов"
-      /> 
-      <div class="checkbox-input">
-        <label for="" class="checkbox">
-          <input type="checkbox">
-          <span class="checkbox-button"></span>
-        </label>  
-      </div>
+        <div class="modal-title">Регистрация</div>
+        <div class="modal-input__wrapp">
+          <div class="modal-input">
+            <div class="input-wrapp">
+              <input type="text" class="input surname_input" id="surname_popup" name="surname_popup" placeholder="Иванов" />
+              <div class="checkbox-input">
+                <label for="" class="checkbox">
+                  <input type="checkbox">
+                  <span class="checkbox-button"></span>
+                </label>
+              </div>
+            </div>
+            <div class="input-wrapp">
+              <input type="text" class="input name_input" id="name_popup" name="name_popup" placeholder="Имя" />
+              <div class="checkbox-input">
+                <label for="" class="checkbox">
+                  <input type="checkbox">
+                  <span class="checkbox-button"></span>
+                </label>
+              </div>
+            </div>
+            <div class="input-wrapp">
+              <input type="text" class="input patronymic_input" id="patronymic_popup" name="patronymic_popup" placeholder="Отчество" />
+              <div class="checkbox-input">
+                <label for="" class="checkbox">
+                  <input type="checkbox">
+                  <span class="checkbox-button"></span>
+                </label>
+              </div>
+            </div>
+            <div class="input-wrapp">
+              <input type="text" class="input birth_input" id="birth_popup" name="birth_popup" placeholder="Дата рождения" />
+              <div class="checkbox-input">
+                <label for="" class="checkbox">
+                  <input type="checkbox">
+                  <span class="checkbox-button"></span>
+                </label>
+              </div>
+            </div>
+            <div class="input-wrapp">
+              <input type="text" class="input country_input" id="country_popup" name="country_popup" placeholder="Страна" />
+              <div class="checkbox-input">
+                <label for="" class="checkbox">
+                  <input type="checkbox">
+                  <span class="checkbox-button"></span>
+                </label>
+              </div>
+            </div>
+            <div class="input-wrapp">
+              <input type="text" class="input city_input" id="city_popup" name="city_popup" placeholder="Город" />
+              <div class="checkbox-input">
+                <label for="" class="checkbox">
+                  <input type="checkbox">
+                  <span class="checkbox-button"></span>
+                </label>
+              </div>
+            </div>
+            <div class="input-wrapp">
+              <input type="text" class="input tel_input" id="tel_popup" name="tel_popup" placeholder="Номер телефона" />
+              <div class="checkbox-input">
+                <label for="" class="checkbox">
+                  <input type="checkbox">
+                  <span class="checkbox-button"></span>
+                </label>
+              </div>
+            </div>
+            <div class="input-wrapp">
+              <input type="text" class="input mail_input" id="mail_popup" name="mail_popup" placeholder="Почта" />
+              <div class="checkbox-input">
+                <label for="" class="checkbox">
+                  <input type="checkbox">
+                  <span class="checkbox-button"></span>
+                </label>
+              </div>
+            </div>
+            <div class="input-wrapp">
+              <input type="text" class="input login_input" id="login_popup" name="login_popup" placeholder="Логин" />
+              <div class="checkbox-input">
+                <label for="" class="checkbox">
+                  <input type="checkbox">
+                  <span class="checkbox-button"></span>
+                </label>
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-input__down-wrapp">
+            <div class="input-wrapp">
+              <input type="text" class="input password_input" id="password_popup" name="password_popup" placeholder="Пароль" />
+              <div class="checkbox-input">
+                <label for="" class="checkbox">
+                  <input type="checkbox">
+                  <span class="checkbox-button"></span>
+                </label>
+              </div>
+            </div>
+            <div class="input-wrapp">
+              <input type="text" class="input repeat-password_input" id="repeat-password_popup" name="repeat-password_popup" placeholder="Повторить пароль" />
+              <div class="checkbox-input">
+                <label for="" class="checkbox">
+                  <input type="checkbox">
+                  <span class="checkbox-button"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-btn_wrapp">
+          <button class="btn btn-email">
+            <div class="btn__body-wrapp">
+              <div class="btn__body">
+                <span class="btn__text">Зарегистрироваться</span>
+              </div>
+            </div>
+          </button>
+        </div>
+        <div class="modal-hidden">
+          <div class="modal-hidden__text">&#215</div>
+        </div>
     </div>
-      <div class="input-wrapp">
-      <input
-              type="text"
-              class="input name_input"
-              id="name_popup"
-              name="name_popup"
-              placeholder="Имя"
-      />
-      <div class="checkbox-input">
-        <label for="" class="checkbox">
-          <input type="checkbox">
-          <span class="checkbox-button"></span>
-        </label>  
-      </div></div>
-      <div class="input-wrapp">
-      <input
-      type="text"
-      class="input patronymic_input"
-      id="patronymic_popup"
-      name="patronymic_popup"
-      placeholder="Отчество"
-/>
-<div class="checkbox-input">
-  <label for="" class="checkbox">
-    <input type="checkbox">
-    <span class="checkbox-button"></span>
-  </label>  
-</div></div>
-<div class="input-wrapp">
-<input
-      type="text"
-      class="input birth_input"
-      id="birth_popup"
-      name="birth_popup"
-      placeholder="Дата рождения"
-      
-/>
-<div class="checkbox-input">
-  <label for="" class="checkbox">
-    <input type="checkbox">
-    <span class="checkbox-button"></span>
-  </label>  
-</div></div>
-<div class="input-wrapp">
-<input
-type="text"
-class="input country_input"
-id="country_popup"
-name="country_popup"
-placeholder="Страна"
-/>
-<div class="checkbox-input">
-  <label for="" class="checkbox">
-    <input type="checkbox">
-    <span class="checkbox-button"></span>
-  </label>  
-</div></div>
-<div class="input-wrapp">
-<input
-type="text"
-class="input city_input"
-id="city_popup"
-name="city_popup"
-placeholder="Город"
-/>
-<div class="checkbox-input">
-  <label for="" class="checkbox">
-    <input type="checkbox">
-    <span class="checkbox-button"></span>
-  </label>  
-</div></div>
-<div class="input-wrapp">
-<input
-type="text"
-class="input tel_input"
-id="tel_popup"
-name="tel_popup"
-placeholder="Номер телефона"
-/>
-<div class="checkbox-input">
-  <label for="" class="checkbox">
-    <input type="checkbox">
-    <span class="checkbox-button"></span>
-  </label>  
-</div></div>
-<div class="input-wrapp">
-<input
-type="text"
-class="input mail_input"
-id="mail_popup"
-name="mail_popup"
-placeholder="Почта"
-/>
-<div class="checkbox-input">
-  <label for="" class="checkbox">
-    <input type="checkbox">
-    <span class="checkbox-button"></span>
-  </label>  
-</div></div>
-<div class="input-wrapp">
-<input
-type="text"
-class="input login_input"
-id="login_popup"
-name="login_popup"
-placeholder="Логин"
-/>
-<div class="checkbox-input">
-  <label for="" class="checkbox">
-    <input type="checkbox">
-    <span class="checkbox-button"></span>
-  </label>  
-</div></div>
+    </form>
 
   </div>
- <div class="modal-input__down-wrapp">
-  <div class="input-wrapp">
-  <input
-  type="text"
-  class="input password_input"
-  id="password_popup"
-  name="password_popup"
-  placeholder="Пароль"
-  />
-  <div class="checkbox-input">
-    <label for="" class="checkbox">
-      <input type="checkbox">
-      <span class="checkbox-button"></span>
-    </label>  
-  </div></div>
-  <div class="input-wrapp">
-  <input
-  type="text"
-  class="input repeat-password_input"
-  id="repeat-password_popup"
-  name="repeat-password_popup"
-  placeholder="Повторить пароль"
-  />  <div class="checkbox-input">
-    <label for="" class="checkbox">
-      <input type="checkbox">
-      <span class="checkbox-button"></span>
-    </label>  
-  </div>
- </div>
-</div>
-</div>
-
-   
-
-  <div class="modal-btn_wrapp">
-<button  class="btn btn-email" >
-  <div class="btn__body-wrapp">
-  <div class="btn__body">
-    <span class="btn__text">Зарегистрироваться</span>
-    </div>
-  </div>
-</button>
-</div>
-<div class="modal-hidden"> <div class="modal-hidden__text">&#215</div></div>
-    </div>
-  </form>
 
   </div>
-</div>
-
-
-
- 
-
 
 </article>
 
 <div class="form-in">
   <div class="form-in__inner">
 <form method="post" action="" class="form-in__content">
-  <div class="form-in-input">
+  <span class="form-in-input">
     <input
             type="text"
             class="input login_input"
@@ -754,7 +631,7 @@ placeholder="Логин"
             name=" password__input"
             placeholder="Пароль"
     />
-    </div
+    </
 </form>
 <div class="form-in-btn">
   <button  class="btn btn-form-in btn-scroll btn-main">
@@ -765,7 +642,7 @@ placeholder="Логин"
       <span class="btn__icon">
     
 
-        </span>
+   
         <span></span>
       </span>
     </div>
@@ -776,7 +653,7 @@ placeholder="Логин"
 <div class="form-hidden"> <div class="form-hidden__text">&#215</div></div>
 </div>
 
-</div>
+
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <script src="js/script.min.js"></script>
