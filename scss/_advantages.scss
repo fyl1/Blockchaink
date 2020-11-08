@@ -26,16 +26,16 @@
   // .advantages-card__img
 
   &__img {
-    width: 200px;
-    height: 200px;
-    margin-bottom: 80px;
+    width: 160px;
+    height: 140px;
+    margin-bottom: 60px;
   }
 
   // .advantages-card__text
 
   &__text {
     max-width: 80%;
-    font-size: 17px;
+    font-size: 15px;
     font-family: "Montserrat";
     color: darken($color: rgb(255, 255, 255), $amount: 25%);
     line-height: 1.6;

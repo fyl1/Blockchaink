@@ -289,6 +289,34 @@
   padding-bottom: 20px;
   padding-top: 15px;
 }
+.header-top{
+  background-color: rgb(24, 30, 32);
+  padding: 10px 0;
+ & .course-plus{
+    color: green;
+    padding-left: 10px;
+  }
+  & .course-minus{
+    padding-left: 10px;
+  }
+  & li{
+    position: relative;
+    display: flex;
+    font-size: 8px;
+    color:darken($color:#ffffff, $amount: 25%);
+    &::after{
+      content: "•";
+    position: absolute;
+    right: 20px;
+    top:  0px;
+    color:darken($color:#ffffff, $amount: 25%);
+
+    }
+
+  }
+}
+
+
 @media (min-width: 480px) {
 }
 @media (min-width: 768px) {
@@ -322,6 +350,32 @@
   }
   .header-btn {
     display: none;
+  }
+  .header-top{
+    background-color: rgb(24, 30, 32);
+    padding: 5px 0;
+   & .course-plus{
+      color: green;
+      padding-left: 10px;
+    }
+    & .course-minus{
+      padding-left: 10px;
+    }
+    & li{
+      position: relative;
+      display: flex;
+      font-size: 5px;
+      color:darken($color:#ffffff, $amount: 25%);
+      &::after{
+        content: "•";
+      position: absolute;
+      right: 10px;
+      top:  0px;
+      color:darken($color:#ffffff, $amount: 25%);
+  
+      }
+  
+    }
   }
 }
 @media (max-width: 767px) {

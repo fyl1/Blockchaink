@@ -451,6 +451,37 @@ p {
   padding-top: 15px;
 }
 
+.header-top {
+  background-color: #181e20;
+  padding: 10px 0;
+}
+
+.header-top .course-plus {
+  color: green;
+  padding-left: 10px;
+}
+
+.header-top .course-minus {
+  padding-left: 10px;
+}
+
+.header-top li {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 8px;
+  color: #bfbfbf;
+}
+
+.header-top li::after {
+  content: "•";
+  position: absolute;
+  right: 20px;
+  top: 0px;
+  color: #bfbfbf;
+}
+
 @media (min-width: 992px) {
   .hamburger-menu {
     display: none;
@@ -477,6 +508,32 @@ p {
   }
   .header-btn {
     display: none;
+  }
+  .header-top {
+    background-color: #181e20;
+    padding: 5px 0;
+  }
+  .header-top .course-plus {
+    color: green;
+    padding-left: 10px;
+  }
+  .header-top .course-minus {
+    padding-left: 10px;
+  }
+  .header-top li {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 5px;
+    color: #bfbfbf;
+  }
+  .header-top li::after {
+    content: "•";
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    color: #bfbfbf;
   }
 }
 
@@ -824,7 +881,7 @@ p {
 }
 
 .club-text p {
-  font-size: 17px;
+  font-size: 15px;
   font-family: "Montserrat";
   color: #f2f2f2;
   line-height: 1.6;
@@ -875,7 +932,7 @@ p {
 
 .career__text p {
   width: 95%;
-  font-size: 17px;
+  font-size: 15px;
   font-family: "Montserrat";
   font-weight: 600;
   color: #021315;
@@ -980,14 +1037,14 @@ p {
 }
 
 .advantages-card__img {
-  width: 200px;
-  height: 200px;
-  margin-bottom: 80px;
+  width: 160px;
+  height: 140px;
+  margin-bottom: 60px;
 }
 
 .advantages-card__text {
   max-width: 80%;
-  font-size: 17px;
+  font-size: 15px;
   font-family: "Montserrat";
   color: #bfbfbf;
   line-height: 1.6;
@@ -1047,7 +1104,7 @@ p {
 }
 
 .safety__title {
-  max-width: 630px;
+  max-width: 530px;
   width: 100%;
   margin: 0 auto;
 }
@@ -1093,7 +1150,7 @@ p {
 }
 
 .safety-item__text {
-  font-size: 17.75px;
+  font-size: 15px;
   font-family: "Montserrat";
   color: #bfbfbf;
   line-height: 1.778;
@@ -1211,7 +1268,7 @@ p {
 }
 
 .news-card__text {
-  font-size: 18.75px;
+  font-size: 15px;
   font-family: "Montserrat";
   color: #bfbfbf;
   line-height: 1.778;
@@ -1252,14 +1309,14 @@ p {
     padding: 70px 0 70px 0;
   }
   .news__title {
-    font-size: 22px;
+    font-size: 20px;
   }
   .news-card__inner {
     padding: 20px 30px;
     margin: 0 50px;
   }
   .news-card__text {
-    font-size: 12px;
+    font-size: 11px;
   }
 }
 
@@ -1311,7 +1368,7 @@ p {
 .footer-menu__link {
   color: #fff;
   margin-right: 60px;
-  font-size: 19px;
+  font-size: 15px;
   font-family: "Montserrat";
   color: #bfbfbf;
   line-height: 1.357;
@@ -1355,8 +1412,12 @@ p {
   margin-left: 20px;
 }
 
+.partners img {
+  width: 80%;
+}
+
 .support__email {
-  font-size: 19px;
+  font-size: 15px;
   font-family: "Montserrat";
   color: #cccccc;
   line-height: 1.357;
@@ -1364,7 +1425,7 @@ p {
 }
 
 .footer-email {
-  font-size: 19px;
+  font-size: 15px;
   font-family: "Montserrat";
   color: #cccccc;
   line-height: 1.357;
@@ -1381,7 +1442,7 @@ p {
 }
 
 .support-cop__title {
-  font-size: 21.354px;
+  font-size: 17.354px;
   font-family: "Montserrat";
   color: #cccccc;
   line-height: 1.357;
@@ -1391,7 +1452,7 @@ p {
 
 @media (max-width: 1699px) {
   .footer-menu__link {
-    margin-right: 20px;
+    margin-right: 14px;
     font-size: 17px;
   }
 }
@@ -1412,13 +1473,13 @@ p {
 
 @media (max-width: 991px) {
   .footer-menu__link {
-    font-size: 16px;
+    font-size: 12px;
   }
   .support-cop__title {
-    font-size: 16px;
+    font-size: 13px;
   }
   .support-cop {
-    font-size: 12px;
+    font-size: 11px;
   }
   .footer-inner {
     -webkit-box-orient: vertical;
@@ -1427,7 +1488,7 @@ p {
             flex-direction: column;
   }
   .support__email {
-    font-size: 16px;
+    font-size: 12px;
     margin-top: 20px;
     margin-bottom: 20px;
   }
@@ -1435,16 +1496,16 @@ p {
 
 @media (max-width: 767px) {
   .footer-menu__link {
-    font-size: 14px;
+    font-size: 12px;
   }
   .support-cop__title {
-    font-size: 14px;
+    font-size: 12px;
   }
   .support-cop {
     font-size: 10px;
   }
   .support__email {
-    font-size: 14px;
+    font-size: 12px;
     margin-top: 15px;
     margin-bottom: 15px;
   }

@@ -65,7 +65,7 @@
   // .news-card__text
 
   &__text {
-    font-size: 18.75px;
+    font-size: 15px;
     font-family: "Montserrat";
     color: darken($color: rgb(255, 255, 255), $amount: 25%);
     line-height: 1.778;
@@ -106,13 +106,13 @@
     padding: 70px 0 70px 0;
   }
   .news__title {
-    font-size: 22px;
+    font-size: 20px;
   }
   .news-card__inner {
     padding: 20px 30px;
     margin: 0 50px;
   }
   .news-card__text {
-    font-size: 12px;
+    font-size: 11px;
   }
 }
