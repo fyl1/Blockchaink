@@ -50,7 +50,7 @@ $c_w_0_5: rgba(256, 256, 256, 0.5);
     }
 }
 .referral {
-
+cursor: pointer;
     // .referral__inner
 
     &__inner {
@@ -101,6 +101,7 @@ $c_w_0_5: rgba(256, 256, 256, 0.5);
         background-color: rgb(25, 35, 44);
         width: 40px;
         height: 40px;
+        border-radius: 50%;
         & img{
             border-radius: 50%;
             width: 100%;
@@ -135,9 +136,11 @@ $c_w_0_5: rgba(256, 256, 256, 0.5);
     // .main__left
 
     &__left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         width: 19%;
         max-width: 300px;
-        height: 100%;
         min-width: 230px;
         min-height: 100vh;
         background-color: rgb(23, 22, 28);
@@ -157,10 +160,10 @@ $c_w_0_5: rgba(256, 256, 256, 0.5);
     // .main__title
 
     &__title {
-        font-size: 32px;
+        font-size: 25px;
         font-family: "Montserrat";
         color: rgb(255, 255, 255);
-        font-weight: bold;
+        font-weight: 600;
         line-height: 1.2;
         text-align: left;
         margin-bottom: 50px
@@ -185,12 +188,21 @@ $c_w_0_5: rgba(256, 256, 256, 0.5);
 
     &__li {
         background-color: transparent;
-        padding: 35px 0 0 20%  ;
+        padding: 25px 0 0 0  ;
     }
 
     // .menu-inner__item-img
 
     &__item-img {
+        margin-right: 20px;
+width: 20px;
+height: 20px;
+& svg{
+    width: 20px;
+    height: 20px;
+}
+
+
     }
 
     // .menu-inner__btn
@@ -198,7 +210,12 @@ $c_w_0_5: rgba(256, 256, 256, 0.5);
     &__btn {
     }
     // .menu-inner__item
+
     &__item {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        position: relative;
         font-size: 12px;
         font-family: "Montserrat";
         color: darken($color: rgb(255, 255, 255), $amount: 25%);
@@ -207,8 +224,22 @@ $c_w_0_5: rgba(256, 256, 256, 0.5);
         line-height: 1.2;
         text-align: left;
         background-color: transparent;
+        padding: 5px 0 5px 20%;
         &:hover{
             color: rgb(220, 174, 81);
+             &::after{
+             position: absolute;
+             content: "";
+             left: 0;
+             top: 0;
+             background-color: rgb(220, 174, 81);
+             box-shadow: 0px 0px 13.5px 1.5px rgba(220, 174, 81, 0.54);
+             width: 6px;
+             height: 100%;
+             }
+             &:hover .menu-inner__item-img{
+                 fill: rgb(220, 174, 81);
+             }
         }
     }
 }
@@ -403,33 +434,47 @@ padding-left: 30px;
 }
 }
 .card-text-btn {
+    margin-top: 20px;
+    max-width: 100px;
 }
-@media (max-width: 1199px) {
-    .investment{
-        flex-direction: column;
-    }
-    .investment-statistics{
-        width: calc(100% - 40px);
-    }
-    .company-news-card{
-        flex-wrap: wrap;
-    }
-    .company-news-card .card-img{
-        width: 100%;
-    }
-    .company-news-card .card-text{
-        width: 100%;
-        padding-left: 0%;
-    }
-}
-@media (max-width: 767px) {
-    .header__logo{
-        display: none;
-    }
-    .header__right{
-        width: 100%;
-    }
-   .main__left{
-        display: none;
-    }
+// @media (max-width: 1199px) {
+//     .investment{
+//         flex-direction: column;
+//     }
+//     .investment-statistics{
+//         width: calc(100% - 40px);
+//     }
+//     .company-news-card{
+//         flex-wrap: wrap;
+//     }
+//     .company-news-card .card-img{
+//         width: 100%;
+//     }
+//     .company-news-card .card-text{
+//         width: 100%;
+//         padding-left: 0%;
+//     }
+// }
+// @media (max-width: 767px) {
+//     .header__logo{
+//         display: none;
+//     }
+//     .header__right{
+//         width: 100%;
+//     }
+//    .main__left{
+//         display: none;
+//     }
+// }
+    
+.bell{
+    font-size: 10px;
+        font-family: "Montserrat";
+        color: darken($color: rgb(255, 255, 255), $amount: 15%);
+        font-weight: bold;
+        line-height: 1.2;
+        text-align: left;
+        padding-left: 30%;
+        padding-bottom: 20px;
+      
 }

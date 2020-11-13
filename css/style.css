@@ -452,12 +452,23 @@ p {
 }
 
 .header-top {
+  position: relative;
   background-color: #181e20;
   padding: 10px 0;
 }
 
+.header-top__inner {
+  -webkit-transform: translate(-50%, 0px);
+          transform: translate(-50%, 0px);
+}
+
 .header-top .course-plus {
   color: green;
+  padding-left: 10px;
+}
+
+.header-top .course-minus {
+  color: red;
   padding-left: 10px;
 }
 
@@ -501,7 +512,7 @@ p {
   .hamburger-menu {
     position: absolute;
     right: 10px;
-    top: 0px;
+    top: 5px;
   }
   .header-btn {
     margin-right: 40px;
@@ -549,6 +560,9 @@ p {
   }
   .menu__btn {
     top: -3px;
+  }
+  .hamburger-menu {
+    top: 20px;
   }
 }
 
@@ -2288,6 +2302,148 @@ p {
   text-transform: inherit;
 }
 
+.btn-card-text {
+  position: relative;
+  width: 100%;
+  height: 24px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 3px;
+  background-color: #d9af48;
+  z-index: 2;
+}
+
+.btn-card-text .btn__body {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn-card-text .btn__body .btn__text {
+  font-size: 6.5px;
+  font-family: "Montserrat";
+  color: #181e20;
+  font-weight: bold;
+  text-transform: inherit;
+  text-align: center;
+}
+
+.btn-up-balance {
+  margin-bottom: 12px;
+  height: 36px;
+  border-radius: 4px;
+}
+
+.btn-up-balance .btn__body {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn-up-balance .btn__body .btn__text {
+  font-size: 9.705px;
+  font-family: "Montserrat";
+  color: #17161c;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.btn-withdraw {
+  margin-bottom: 12px;
+  height: 36px;
+  border-radius: 4px;
+  background-color: #1b1a21;
+}
+
+.btn-withdraw:focus {
+  outline: none;
+  border: none;
+  background-color: #121415;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn-withdraw:hover {
+  background-color: #121415;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn-withdraw:active {
+  background-color: #121415;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn-withdraw .btn__body {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn-withdraw .btn__body .btn__text {
+  font-size: 9.705px;
+  font-family: "Montserrat";
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.btn-transfer-partner {
+  margin-bottom: 12px;
+  height: 36px;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.btn-transfer-partner .btn__body {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn-transfer-partner .btn__body .btn__text {
+  font-size: 9.705px;
+  font-family: "Montserrat";
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.btn-balance-add {
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
 .page .header__inner {
   padding: 0 35px 0 0px;
 }
@@ -2326,6 +2482,10 @@ p {
   min-width: 230px;
 }
 
+.referral {
+  cursor: pointer;
+}
+
 .referral__text {
   font-size: 14px;
   font-family: "Montserrat";
@@ -2359,6 +2519,7 @@ p {
   background-color: #19232c;
   width: 40px;
   height: 40px;
+  border-radius: 50%;
 }
 
 .ava__img img {
@@ -2385,9 +2546,18 @@ p {
 }
 
 .main__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 19%;
   max-width: 300px;
-  height: 100%;
   min-width: 230px;
   min-height: 100vh;
   background-color: #17161c;
@@ -2403,10 +2573,10 @@ p {
 }
 
 .main__title {
-  font-size: 32px;
+  font-size: 25px;
   font-family: "Montserrat";
   color: white;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 1.2;
   text-align: left;
   margin-bottom: 50px;
@@ -2423,10 +2593,31 @@ p {
 
 .menu-inner__li {
   background-color: transparent;
-  padding: 35px 0 0 20%;
+  padding: 25px 0 0 0;
+}
+
+.menu-inner__item-img {
+  margin-right: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.menu-inner__item-img svg {
+  width: 20px;
+  height: 20px;
 }
 
 .menu-inner__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
   font-size: 12px;
   font-family: "Montserrat";
   color: #bfbfbf;
@@ -2435,10 +2626,27 @@ p {
   line-height: 1.2;
   text-align: left;
   background-color: transparent;
+  padding: 5px 0 5px 20%;
 }
 
 .menu-inner__item:hover {
   color: #dcae51;
+}
+
+.menu-inner__item:hover::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background-color: #dcae51;
+  -webkit-box-shadow: 0px 0px 13.5px 1.5px rgba(220, 174, 81, 0.54);
+          box-shadow: 0px 0px 13.5px 1.5px rgba(220, 174, 81, 0.54);
+  width: 6px;
+  height: 100%;
+}
+
+.menu-inner__item:hover:hover .menu-inner__item-img {
+  fill: #dcae51;
 }
 
 .investment {
@@ -2592,37 +2800,344 @@ p {
   text-align: left;
 }
 
-@media (max-width: 1199px) {
-  .investment {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .investment-statistics {
-    width: calc(100% - 40px);
-  }
-  .company-news-card {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .company-news-card .card-img {
-    width: 100%;
-  }
-  .company-news-card .card-text {
-    width: 100%;
-    padding-left: 0%;
-  }
+.card-text-btn {
+  margin-top: 20px;
+  max-width: 100px;
 }
 
-@media (max-width: 767px) {
-  .header__logo {
-    display: none;
-  }
-  .header__right {
-    width: 100%;
-  }
-  .main__left {
-    display: none;
-  }
+.bell {
+  font-size: 10px;
+  font-family: "Montserrat";
+  color: #d9d9d9;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+  padding-left: 30%;
+  padding-bottom: 20px;
+}
+
+.main__content {
+  width: 100%;
+}
+
+.finance-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+
+.finance-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.finance-top__left {
+  width: 30%;
+}
+
+.finance-top__right {
+  width: 70%;
+}
+
+.balance-wallet__uptitle {
+  font-size: 6.705px;
+  font-family: "Montserrat";
+  color: #8999a9;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.balance-wallet__title {
+  font-size: 34px;
+  font-family: "Montserrat";
+  color: white;
+  line-height: 1.2;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.finance-btn {
+  max-width: 217px;
+  width: 100%;
+}
+
+.balance-add {
+  margin-right: 35px;
+}
+
+.balance-add__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 25px 30px;
+  border-radius: 4px;
+  background-color: #1b1a21;
+}
+
+.balance-add__form {
+  width: 53%;
+}
+
+.balance-add__img {
+  margin: -50px 0 -60px 0;
+  width: 47%;
+}
+
+.balance-add__img img {
+  width: 110%;
+}
+
+.balance-add__title {
+  font-size: 10px;
+  font-family: "Montserrat";
+  color: white;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.balance-add-input .input-wrapp {
+  margin-bottom: 15px;
+}
+
+.balance-add-input .input {
+  height: 38px;
+  max-width: 230px;
+  border-radius: 4px;
+  font-size: 9px;
+  font-family: "Montserrat";
+  color: rgba(80, 78, 99, 0.5);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.companies-img {
+  padding: 5px 0 20px 0;
+}
+
+.companies-img__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.companies-img__item {
+  width: 90px;
+  height: 25px;
+  margin: 0 20px  10px 0;
+}
+
+.finance-history {
+  padding-right: 35px;
+  margin-top: 45px;
+}
+
+.finance-history__title {
+  font-size: 10px;
+  font-family: "Montserrat";
+  color: white;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.finance-history__list {
+  padding: 0;
+}
+
+.finance-history__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(60, 58, 75, 0.671);
+  padding-left: 45px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 36px;
+}
+
+.finance-history__header .finance-history__item {
+  font-size: 10px;
+  font-family: "Montserrat";
+  color: white;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.finance-history__header .date {
+  width: 17%;
+}
+
+.finance-history__header .time {
+  width: 17%;
+}
+
+.finance-history__header .note {
+  width: 23%;
+}
+
+.finance-history__header .sum {
+  width: 20%;
+  margin: 0;
+}
+
+.finance-history__header .status {
+  position: relative;
+  width: 23%;
+}
+
+.finance-history__li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 45px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 6px;
+  background-color: rgba(23, 22, 28, 0.8);
+}
+
+.finance-history__li .finance-history__item {
+  font-size: 9px;
+  font-family: "Montserrat";
+  color: #bfbfbf;
+  line-height: 1.2;
+  text-align: left;
+  padding: 12px 0 15px 0;
+}
+
+.finance-history__li .date {
+  width: 17%;
+}
+
+.finance-history__li .time {
+  width: 17%;
+}
+
+.finance-history__li .note {
+  width: 23%;
+}
+
+.finance-history__li .sum {
+  width: 20%;
+  margin: 0;
+}
+
+.finance-history__li .status {
+  width: 23%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.finance-history__li .status__completed {
+  display: none;
+  position: relative;
+  padding-left: 20px;
+}
+
+.finance-history__li .status__completed + .active {
+  display: block;
+}
+
+.finance-history__li .status__completed::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 9px;
+  height: 9px;
+  background-color: #31cc0e;
+  border-radius: 50%;
+}
+
+.finance-history__li .status__process {
+  display: none;
+  position: relative;
+  padding-left: 20px;
+}
+
+.finance-history__li .status__process + .active {
+  display: block;
+}
+
+.finance-history__li .status__process::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 9px;
+  height: 9px;
+  background-color: #687ff2;
+  border-radius: 50%;
+}
+
+.finance-history__li .status__cancel {
+  display: none;
+  position: relative;
+  padding-left: 20px;
+}
+
+.finance-history__li .status__cancel + .active {
+  display: block;
+}
+
+.finance-history__li .status__cancel::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 9px;
+  height: 9px;
+  background-color: #fc1a1a;
+  border-radius: 50%;
+}
+
+.balance-add-btn {
+  max-width: 214px;
+  width: 100%;
+}
+
+.pagination__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pagination__item {
+  padding: 5px;
+  font-size: 11px;
+  font-family: "Montserrat";
+  color: #3f3d4e;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  cursor: pointer;
+}
+
+.pagination__item.active {
+  font-size: 12px;
+  color: #ffffff;
 }

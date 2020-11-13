@@ -290,10 +290,20 @@
   padding-top: 15px;
 }
 .header-top{
+  position: relative;
   background-color: rgb(24, 30, 32);
   padding: 10px 0;
+
+ &__inner{
+  transform: translate(-50%, 0px);
+ 
+ }
  & .course-plus{
     color: green;
+    padding-left: 10px;
+  }
+  & .course-minus{
+    color: red;
     padding-left: 10px;
   }
   & .course-minus{
@@ -320,6 +330,7 @@
 @media (min-width: 480px) {
 }
 @media (min-width: 768px) {
+ 
 }
 @media (min-width: 992px) {
   .hamburger-menu {
@@ -343,7 +354,7 @@
   .hamburger-menu {
     position: absolute;
     right: 10px;
-    top: 0px;
+    top: 5px;
   }
   .header-btn {
     margin-right: 40px;
@@ -389,6 +400,9 @@
   }
   .menu__btn {
     top: -3px;
+  }
+  .hamburger-menu{
+    top: 20px;
   }
 }
 @media (max-width: 479px) {
