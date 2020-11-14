@@ -2444,6 +2444,71 @@ p {
   border-radius: 4px;
 }
 
+.btn-purchase-package {
+  border-radius: 4px;
+  background-color: #64a90b;
+}
+
+.btn-purchase-package:focus {
+  outline: none;
+  border: none;
+  background-color: #4d8309;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn-purchase-package:hover {
+  background-color: #4d8309;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn-purchase-package:active {
+  background-color: #4d8309;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn-purchase-package .btn__body .btn__text {
+  color: #ffffff;
+}
+
+.btn-card-news {
+  height: 24px;
+  border-radius: 4px;
+  background-color: #24232a;
+}
+
+.btn-card-news:focus {
+  outline: none;
+  border: none;
+  background-color: #f6b94a;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn-card-news:hover {
+  background-color: #f6b94a;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn-card-news:active {
+  background-color: #f6b94a;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn-card-news:hover .btn__body .btn__text {
+  color: #17161c;
+}
+
+.btn-card-news .btn__body .btn__text {
+  color: #ffffff;
+  font-size: 8px;
+  text-transform: inherit;
+}
+
 .page .header__inner {
   padding: 0 35px 0 0px;
 }
@@ -2845,7 +2910,7 @@ p {
 }
 
 .balance-wallet__uptitle {
-  font-size: 6.705px;
+  font-size: 10px;
   font-family: "Montserrat";
   color: #8999a9;
   font-weight: bold;
@@ -3140,4 +3205,402 @@ p {
 .pagination__item.active {
   font-size: 12px;
   color: #ffffff;
+}
+
+.investments .balance-wallet__title {
+  color: #dcae51;
+  margin-bottom: 20px;
+}
+
+.investments-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 70px;
+}
+
+.investments-top__left {
+  width: 30%;
+}
+
+.investments-top__right {
+  width: 70%;
+}
+
+.investments-input {
+  max-width: 200px;
+}
+
+.investments-input__title {
+  font-size: 9px;
+  font-family: "Montserrat";
+  color: #8999a9;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.investments-input .input-wrapp {
+  margin-bottom: 10px;
+}
+
+.investments-input .input {
+  height: 26px;
+  padding: 0;
+  font-size: 20px;
+  font-family: "Montserrat";
+  color: #ffffff;
+  line-height: 1.2;
+  font-weight: 700;
+  text-align: center;
+}
+
+.investments-input .input::-webkit-input-placeholder {
+  height: 26px;
+  padding: 0;
+  font-size: 20px;
+  font-family: "Montserrat";
+  color: #ffffff;
+  line-height: 1.2;
+  font-weight: 500;
+  text-align: center;
+}
+
+.investments-input .input:-ms-input-placeholder {
+  height: 26px;
+  padding: 0;
+  font-size: 20px;
+  font-family: "Montserrat";
+  color: #ffffff;
+  line-height: 1.2;
+  font-weight: 500;
+  text-align: center;
+}
+
+.investments-input .input::-ms-input-placeholder {
+  height: 26px;
+  padding: 0;
+  font-size: 20px;
+  font-family: "Montserrat";
+  color: #ffffff;
+  line-height: 1.2;
+  font-weight: 500;
+  text-align: center;
+}
+
+.investments-input .input::placeholder {
+  height: 26px;
+  padding: 0;
+  font-size: 20px;
+  font-family: "Montserrat";
+  color: #ffffff;
+  line-height: 1.2;
+  font-weight: 500;
+  text-align: center;
+}
+
+.profitability-calculation__inner {
+  border-radius: 4px;
+  background-color: rgba(27, 26, 32, 0.8);
+  padding: 25px 30px 35px 30px;
+}
+
+.profitability-calculation__title {
+  font-size: 12px;
+  font-family: "Montserrat";
+  color: #bfbfbf;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profitability-calculation__items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 5px;
+}
+
+.profitability-calculation__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 4px;
+  background-color: rgba(43, 45, 52, 0.6);
+  padding: 15px 0 20px 0;
+}
+
+.profitability-calculation__subtitle {
+  font-size: 10px;
+  font-family: "Montserrat";
+  color: #8999a9;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.profitability-calculation__text {
+  font-size: 15px;
+  font-family: "Montserrat";
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.profitability-calculation__profit {
+  font-size: 22px;
+  font-family: "Montserrat";
+  color: #dcae51;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.page-investments .investment {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 50px;
+  padding-right: 70px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.page-investments .investment__inner {
+  width: 100%;
+}
+
+.investment-card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 5px;
+}
+
+.investment-card .card {
+  border-radius: 8px;
+  background-color: #23242b;
+  border: 3px solid transparent;
+  padding: 20px 0;
+}
+
+.investment-card .card:hover {
+  border: 3px solid #e8b94a;
+  -webkit-box-shadow: 0px 17px 18px 2px rgba(232, 185, 74, 0.13);
+          box-shadow: 0px 17px 18px 2px rgba(232, 185, 74, 0.13);
+}
+
+.investment-card .card__title {
+  position: relative;
+  font-size: 16px;
+  font-family: "Montserrat";
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.investment-card .card__title::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  height: 3px;
+  left: 50%;
+  width: 20%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #e8b94a;
+}
+
+.investment-card .card-list {
+  padding: 0;
+}
+
+.investment-card .card-list__header {
+  background-color: rgba(63, 67, 77, 0.278);
+  padding: 20px 0 25px 0;
+}
+
+.investment-card .card-list__subtext {
+  font-size: 8px;
+  font-family: "Montserrat";
+  color: #bfbfbf;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.investment-card .card-list__title {
+  font-size: 20px;
+  font-family: "Montserrat";
+  color: #e8b94a;
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.investment-card .card-list__item {
+  padding-top: 20px;
+}
+
+.investment-card .card-list__text {
+  font-size: 17px;
+  font-family: "Montserrat";
+  color: #fcfcfc;
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.promo {
+  display: block;
+}
+
+.promo__inner {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.promo__title {
+  font-size: 33px;
+  font-family: "Montserrat";
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.promo__subtitle {
+  font-size: 16px;
+  font-family: "Montserrat";
+  color: #f2f2f2;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.promo__text {
+  font-size: 10px;
+  font-family: "Montserrat";
+  color: #8999a9;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.promo-img {
+  width: 180px;
+  height: 160px;
+}
+
+.news__inner {
+  padding-right: 105px;
+}
+
+.news__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+}
+
+.news-card {
+  border-radius: 4px;
+}
+
+.news-card .card {
+  background-color: #1b1a20;
+}
+
+.news-card .card-img {
+  border-radius: 4px 4px 0  0;
+}
+
+.news-card .card-img img {
+  border-radius: 4px 4px 0  0;
+}
+
+.news-card .card-text {
+  padding: 15px 30px;
+}
+
+.news-card .card-text__title {
+  font-size: 13px;
+  font-family: "Montserrat";
+  color: white;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+  padding-bottom: 5px;
+}
+
+.news-card .card-text__text {
+  font-size: 8px;
+  font-family: "Montserrat";
+  color: #8999a9;
+  line-height: 1.5;
+  text-align: left;
+  padding-bottom: 25px;
+}
+
+.news-card .card-text__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.news-card .card-text__date {
+  font-size: 7.5px;
+  font-family: "Montserrat";
+  color: #8999a9;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: right;
+}
+
+.news-card .card-text .card-text-btn {
+  width: 100%;
+  max-width: 100px;
+  margin: 0;
 }
